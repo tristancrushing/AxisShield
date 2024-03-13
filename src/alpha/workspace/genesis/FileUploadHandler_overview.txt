@@ -8,3 +8,31 @@ Iteration Notes:
 - The initial version introduced basic file handling and bucket management.
 - Security features were enhanced by requiring a 'secToken' parameter for authentication.
 - Final adjustments ensured robust error handling and security measures.
+
+=== UPDATE ===
+
+Author: Tristan McGowan (tristan@ipspy.net)
+Date: Wed, March 13, 2:19 AM CDT
+
+FileUploadHandler.php Overview
+The FileUploadHandler class is a robust, secure, and extensible PHP solution designed for handling file uploads, specifically tailored for secure backup and storage of surveillance camera feeds. By implementing the IFileUploadHandler interface, it establishes a contract that ensures all critical aspects of file upload and validation are adhered to, including security token validation, file and bucket validation, and the sanitization of input parameters.
+
+Key Features:
+- Security: Emphasizes stringent security checks, including security token validation to prevent unauthorized access and sanitization of bucket names to avoid injection attacks.
+- Validation: Incorporates thorough validation for both the uploaded files (checking for errors and ensuring files meet specific criteria) and bucket names, ensuring they conform to expected patterns and naming conventions.
+- Extensibility: Designed with future enhancements in mind, allowing for easy integration with different storage backends and additional security measures as needed.
+
+Security Best Practices:
+- The class validates security tokens against an expected value, ensuring that only authorized requests can proceed with file uploads.
+- Bucket names are sanitized to remove potentially harmful characters, reducing the risk of injection attacks.
+- Uploaded files are checked for errors and validated to ensure they meet the application's requirements, preventing the upload of potentially harmful files.
+
+Use Case:
+Primarily intended for the secure backup of camera feeds to cloud storage, the FileUploadHandler class can be easily adapted for various file upload scenarios requiring high levels of security and data integrity. It is suitable for applications ranging from surveillance systems to general-purpose file management systems where security and reliability are paramount.
+
+Iteration Notes:
+- The current implementation focuses on balancing security, usability, and performance.
+- Future iterations may include support for additional file validation criteria (e.g., file size limits, type restrictions) and enhanced error handling mechanisms to provide more detailed feedback to users.
+- Consideration for integration with cloud storage APIs for direct file uploads to cloud services, further enhancing the scalability and flexibility of the backup solution.
+
+The FileUploadHandler class is a cornerstone component of the AxisShield project, embodying its commitment to security, reliability, and technological excellence in the realm of surveillance data management.
