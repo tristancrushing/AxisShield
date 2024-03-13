@@ -1,0 +1,9 @@
+Author: Tristan McGowan (tristan@ipspy.net)
+Date: Wed, March 13, 1:58 AM CDT
+
+AxisShieldLogo.png Overview
+The AxisShield logo combines elements of security and surveillance, symbolizing the project's focus on securing and backing up camera feeds. The design incorporates a shield and a stylized camera lens.
+
+Iteration Notes:
+- The concept aimed to reflect the essence of AxisShield without infringing on existing trademarks.
+- The design emphasizes modernity, professionalism, and relevance to technology and security.
